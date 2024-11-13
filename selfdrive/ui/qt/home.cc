@@ -139,7 +139,7 @@ OffroadHome::OffroadHome(QWidget* parent) : QFrame(parent) {
       left_widget->setCurrentIndex(uiState()->prime_state->isSubscribed() ? 0 : 1);
     });
 
-    home_layout->addWidget(left_widget, 1);
+    // home_layout->addWidget(left_widget, 1);
 
     // right: ExperimentalModeButton, SetupWidget
     QWidget* right_widget = new QWidget(this);
