@@ -29,7 +29,7 @@ WiFiPromptWidget::WiFiPromptWidget(QWidget *parent) : QFrame(parent) {
     }
     setup_layout->addLayout(title_layout);
 
-    QLabel *desc = new QLabel(tr("Connect to Wi-Fi to upload driving data and help improve openpilot"));
+    QLabel *desc = new QLabel(tr("Connect to Wi-Fi to upload driving data and help improve saferide"));
     desc->setStyleSheet("font-size: 40px; font-weight: 400;");
     desc->setWordWrap(true);
     setup_layout->addWidget(desc);

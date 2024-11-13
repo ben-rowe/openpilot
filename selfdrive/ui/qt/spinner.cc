@@ -29,7 +29,7 @@ TrackWidget::TrackWidget(QWidget *parent) : QWidget(parent) {
   p.setRenderHint(QPainter::SmoothPixmapTransform);
   for (int i = 0; i < track_imgs.size(); ++i) {
     p.resetTransform();
-    p.fillRect(0, 0, spinner_size.width(), spinner_size.height(), Qt::black);
+    p.fillRect(0, 0, spinner_size.width(), spinner_size.height(), Qt::blue);
     p.drawPixmap(0, 0, comma_img);
     p.setTransform(transform.rotate(360 / spinner_fps));
     p.drawPixmap(-width() / 2, -height() / 2, track_img);
@@ -73,7 +73,7 @@ Spinner::Spinner(QWidget *parent) : QWidget(parent) {
 
   setStyleSheet(R"(
     Spinner {
-      background-color: black;
+      background-color: blue;
     }
     QLabel {
       color: white;
