@@ -1,20 +1,3 @@
-Import('env', 'common', 'msgq')
-
-cereal_dir = Dir('.')
-gen_dir = Dir('gen')
-
-# Build cereal
-schema_files = ['log.capnp', 'car.capnp', 'legacy.capnp', 'custom.capnp']
-env.Command([f'gen/cpp/{s}.c++' for s in schema_files] + [f'gen/cpp/{s}.h' for s in schema_files],
-            schema_files,
-            f"capnpc --src-prefix={cereal_dir.path} $SOURCES -o c++:{gen_dir.path}/cpp/")
-
-cereal = env.Library('cereal', [f'gen/cpp/{s}.c++' for s in schema_files])
-
-# Build messaging
-services_h = env.Command(['services.h'], ['services.py'], 'python3 ' + cereal_dir.path + '/services.py > $TARGET')
-env.Program('messaging/bridge', ['messaging/bridge.cc', 'messaging/msgq_to_zmq.cc'], LIBS=[msgq, common, 'pthread'])
-
-socketmaster = env.Library('socketmaster', ['messaging/socketmaster.cc'])
-
-Export('cereal', 'socketmaster')
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c807d219e690d263e34c683a9794f79ac26926002c2a4bd5e3853891fa3aa02
+size 817

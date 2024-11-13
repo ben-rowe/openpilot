@@ -1,16 +1,3 @@
-#!/usr/bin/env bash
-set -e
-
-#echo 4294967295 | sudo tee /sys/module/cam_debug_util/parameters/debug_mdl
-
-# no CCI and UTIL, very spammy
-echo 0xfffdbfff | sudo tee /sys/module/cam_debug_util/parameters/debug_mdl
-echo 0 | sudo tee /sys/module/cam_debug_util/parameters/debug_mdl
-
-sudo dmesg -C
-scons -u -j8 --minimal .
-export DEBUG_FRAMES=1
-#export DISABLE_ROAD=1 DISABLE_WIDE_ROAD=1
-export DISABLE_DRIVER=1
-#export LOGPRINT=debug
-./camerad
+version https://git-lfs.github.com/spec/v1
+oid sha256:d41fd3f6773f66c20f139ee74553d679a6b523a3f989461e38db5e0019206fe0
+size 439

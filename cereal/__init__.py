@@ -1,9 +1,3 @@
-import os
-import capnp
-
-CEREAL_PATH = os.path.dirname(os.path.abspath(__file__))
-capnp.remove_import_hook()
-
-log = capnp.load(os.path.join(CEREAL_PATH, "log.capnp"))
-car = capnp.load(os.path.join(CEREAL_PATH, "car.capnp"))
-custom = capnp.load(os.path.join(CEREAL_PATH, "custom.capnp"))
+version https://git-lfs.github.com/spec/v1
+oid sha256:6fc36e0934cd230d24458ee8c67cd71a24484c6d603aae9919e81f538553ef2f
+size 286

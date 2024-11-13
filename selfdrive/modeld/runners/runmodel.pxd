@@ -1,14 +1,3 @@
-# distutils: language = c++
-
-from libcpp.string cimport string
-
-cdef extern from "selfdrive/modeld/runners/runmodel.h":
-  cdef int USE_CPU_RUNTIME
-  cdef int USE_GPU_RUNTIME
-  cdef int USE_DSP_RUNTIME
-
-  cdef cppclass RunModel:
-    void addInput(string, float*, int)
-    void setInputBuffer(string, float*, int)
-    void * getCLBuffer(string)
-    void execute()
+version https://git-lfs.github.com/spec/v1
+oid sha256:83f3c5bf050bb8dc2af904caca5a972805c3170881d3c278010cfe0dd420a035
+size 362

@@ -1,14 +1,3 @@
-#!/bin/bash
-set -e
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-cd $DIR
-
-if [ ! -d icons/ ]; then
-  git clone https://github.com/twbs/icons/
-fi
-
-cd icons
-git fetch --all
-git checkout d5aa187483a1b0b186f87adcfa8576350d970d98
-cp bootstrap-icons.svg ../
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a6d9778ef23d9068b300f46efd1b6c211326afc477b1110432e08a621c04fd8
+size 274

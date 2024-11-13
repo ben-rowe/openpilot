@@ -1,26 +1,3 @@
-#pragma once
-
-#include <QComboBox>
-#include <QDialog>
-
-#include "selfdrive/ui/qt/api.h"
-
-class RouteListWidget;
-
-class RoutesDialog : public QDialog {
-  Q_OBJECT
-public:
-  RoutesDialog(QWidget *parent);
-  QString route() const { return route_; }
-
-protected:
-  void accept() override;
-  void parseDeviceList(const QString &json, bool success, QNetworkReply::NetworkError err);
-  void parseRouteList(const QString &json, bool success, QNetworkReply::NetworkError err);
-  void fetchRoutes();
-
-  QComboBox *device_list_;
-  QComboBox *period_selector_;
-  RouteListWidget *route_list_;
-  QString route_;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a7cbbdeb7cf40a38c633ed1dd6d75c6cef1f25c4942909d82e43ff6ba178eac
+size 601

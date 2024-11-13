@@ -1,6 +1,3 @@
-Import('env', 'messaging', 'common')
-libs = [messaging, 'pthread', common]
-env.Program('proclogd', ['main.cc', 'proclog.cc'], LIBS=libs)
-
-if GetOption('extras'):
-  env.Program('tests/test_proclog', ['tests/test_proclog.cc', 'proclog.cc'], LIBS=libs)
+version https://git-lfs.github.com/spec/v1
+oid sha256:4cdea5b3f9920b38c5c42b54b5cbb5a72754c68ff60421a769ca9e06afbbedd6
+size 250

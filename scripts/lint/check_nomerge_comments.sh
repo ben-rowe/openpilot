@@ -1,10 +1,3 @@
-#!/usr/bin/env bash
-
-FAIL=0
-
-if grep -n '\(#\|//\)\([[:space:]]*\)NOMERGE' $@; then
-  echo -e "NOMERGE comments found! Remove them before merging\n"
-  FAIL=1
-fi
-
-exit $FAIL
+version https://git-lfs.github.com/spec/v1
+oid sha256:0bea6075b53cb263ef79c97e9beed10913a0f5616426a1f837b69a0863e22597
+size 173

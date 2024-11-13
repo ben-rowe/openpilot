@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
-nmcli connection modify --temporary esim ipv4.route-metric 1 ipv6.route-metric 1
-nmcli con up esim
+version https://git-lfs.github.com/spec/v1
+oid sha256:dce7b8767a3e8688974476af39aad6aa196626898dfe55ec01d88b71f094ea91
+size 119

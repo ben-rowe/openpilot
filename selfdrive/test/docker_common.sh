@@ -1,18 +1,3 @@
-if [ "$1" = "base" ]; then
-  export DOCKER_IMAGE=openpilot-base
-  export DOCKER_FILE=Dockerfile.openpilot_base
-elif [ "$1" = "prebuilt" ]; then
-  export DOCKER_IMAGE=openpilot-prebuilt
-  export DOCKER_FILE=Dockerfile.openpilot
-else
-  echo "Invalid docker build image: '$1'"
-  exit 1
-fi
-
-export DOCKER_REGISTRY=ghcr.io/commaai
-export COMMIT_SHA=$(git rev-parse HEAD)
-
-TAG_SUFFIX=$2
-LOCAL_TAG=$DOCKER_IMAGE$TAG_SUFFIX
-REMOTE_TAG=$DOCKER_REGISTRY/$LOCAL_TAG
-REMOTE_SHA_TAG=$DOCKER_REGISTRY/$LOCAL_TAG:$COMMIT_SHA
+version https://git-lfs.github.com/spec/v1
+oid sha256:8bfac8911456efad019cf198be74b1d6d40d8239b5beaff3799fbc91d9a594e1
+size 510

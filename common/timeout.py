@@ -1,27 +1,3 @@
-import signal
-
-class TimeoutException(Exception):
-  pass
-
-class Timeout:
-  """
-  Timeout context manager.
-  For example this code will raise a TimeoutException:
-  with Timeout(seconds=5, error_msg="Sleep was too long"):
-    time.sleep(10)
-  """
-  def __init__(self, seconds, error_msg=None):
-    if error_msg is None:
-      error_msg = f'Timed out after {seconds} seconds'
-    self.seconds = seconds
-    self.error_msg = error_msg
-
-  def handle_timeout(self, signume, frame):
-    raise TimeoutException(self.error_msg)
-
-  def __enter__(self):
-    signal.signal(signal.SIGALRM, self.handle_timeout)
-    signal.alarm(self.seconds)
-
-  def __exit__(self, exc_type, exc_val, exc_tb):
-    signal.alarm(0)
+version https://git-lfs.github.com/spec/v1
+oid sha256:862433064831fb47c5c12b56f012bd1c89c07f16e14e214cec39817f5fc9f01d
+size 699

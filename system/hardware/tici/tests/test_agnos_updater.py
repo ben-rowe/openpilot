@@ -1,20 +1,3 @@
-import json
-import os
-import requests
-
-TEST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)))
-MANIFEST = os.path.join(TEST_DIR, "../agnos.json")
-
-
-class TestAgnosUpdater:
-
-  def test_manifest(self):
-    with open(MANIFEST) as f:
-      m = json.load(f)
-
-    for img in m:
-      r = requests.head(img['url'], timeout=10)
-      r.raise_for_status()
-      assert r.headers['Content-Type'] == "application/x-xz"
-      if not img['sparse']:
-        assert img['hash'] == img['hash_raw']
+version https://git-lfs.github.com/spec/v1
+oid sha256:c02c485dbf972a4ef739e83d83bb1fe058cc310ef952eef3cf44d72a2f9891b9
+size 494

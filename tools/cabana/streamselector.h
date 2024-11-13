@@ -1,24 +1,3 @@
-#pragma once
-
-#include <QDialogButtonBox>
-#include <QDialog>
-#include <QLineEdit>
-#include <QTabWidget>
-
-#include "tools/cabana/streams/abstractstream.h"
-
-class StreamSelector : public QDialog {
-  Q_OBJECT
-
-public:
-  StreamSelector(QWidget *parent = nullptr);
-  void addStreamWidget(AbstractOpenStreamWidget *w, const QString &title);
-  QString dbcFile() const { return dbc_file->text(); }
-  AbstractStream *stream() const { return stream_; }
-
-private:
-  AbstractStream *stream_ = nullptr;
-  QLineEdit *dbc_file;
-  QTabWidget *tab;
-  QDialogButtonBox *btn_box;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:1be1bdaacb576cc7898f6bedcfc29383ca099416d09abf3a6bd127e071581e31
+size 564

@@ -1,34 +1,3 @@
-import os
-import requests
-API_HOST = os.getenv('API_HOST', 'https://api.commadotai.com')
-
-class CommaApi:
-  def __init__(self, token=None):
-    self.session = requests.Session()
-    self.session.headers['User-agent'] = 'OpenpilotTools'
-    if token:
-      self.session.headers['Authorization'] = 'JWT ' + token
-
-  def request(self, method, endpoint, **kwargs):
-    resp = self.session.request(method, API_HOST + '/' + endpoint, **kwargs)
-    resp_json = resp.json()
-    if isinstance(resp_json, dict) and resp_json.get('error'):
-      if resp.status_code in [401, 403]:
-        raise UnauthorizedError('Unauthorized. Authenticate with tools/lib/auth.py')
-
-      e = APIError(str(resp.status_code) + ":" + resp_json.get('description', str(resp_json['error'])))
-      e.status_code = resp.status_code
-      raise e
-    return resp_json
-
-  def get(self, endpoint, **kwargs):
-    return self.request('GET', endpoint, **kwargs)
-
-  def post(self, endpoint, **kwargs):
-    return self.request('POST', endpoint, **kwargs)
-
-class APIError(Exception):
-  pass
-
-class UnauthorizedError(Exception):
-  pass
+version https://git-lfs.github.com/spec/v1
+oid sha256:1248b66a18bc13b6c0641c7afab048acff4775aedf31c017b1d793cd8c277aa8
+size 1093

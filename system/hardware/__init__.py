@@ -1,16 +1,3 @@
-import os
-from typing import cast
-
-from openpilot.system.hardware.base import HardwareBase
-from openpilot.system.hardware.tici.hardware import Tici
-from openpilot.system.hardware.pc.hardware import Pc
-
-TICI = os.path.isfile('/TICI')
-AGNOS = os.path.isfile('/AGNOS')
-PC = not TICI
-
-
-if TICI:
-  HARDWARE = cast(HardwareBase, Tici())
-else:
-  HARDWARE = cast(HardwareBase, Pc())
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d04c34ebaa7158fb5e6c465f1b92a91c22aaa14bf6dc8a2140a8adfdb24c048
+size 375

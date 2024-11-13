@@ -1,26 +1,3 @@
-# openpilot docs
-
-This is the source for [docs.comma.ai](https://docs.comma.ai).
-The site is updated on pushes to master by this [workflow](../.github/workflows/docs.yaml).
-
-## Development
-NOTE: Those commands must be run in the root directory of openpilot, **not /docs**
-
-**1. Install the docs dependencies**
-``` bash
-pip install .[docs]
-```
-
-**2. Build the new site**
-``` bash
-mkdocs build
-```
-
-**3. Run the new site locally**
-``` bash
-mkdocs serve
-```
-
-References:
-* https://www.mkdocs.org/getting-started/
-* https://github.com/ntno/mkdocs-terminal
+version https://git-lfs.github.com/spec/v1
+oid sha256:41c2eb61dcdaefc8696a74936ca99e0ebeda9df70f57d970116ed53722144a76
+size 552

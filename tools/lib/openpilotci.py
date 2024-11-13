@@ -1,12 +1,3 @@
-from openpilot.tools.lib.openpilotcontainers import OpenpilotCIContainer
-
-def get_url(*args, **kwargs):
-  return OpenpilotCIContainer.get_url(*args, **kwargs)
-
-def upload_file(*args, **kwargs):
-  return OpenpilotCIContainer.upload_file(*args, **kwargs)
-
-def upload_bytes(*args, **kwargs):
-  return OpenpilotCIContainer.upload_bytes(*args, **kwargs)
-
-BASE_URL = OpenpilotCIContainer.BASE_URL
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba7306102860362e8b5a694107a6c6fc14a7de5ce91788d2f4cb7353ed81770d
+size 391

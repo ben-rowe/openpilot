@@ -1,16 +1,3 @@
-#!/usr/bin/env bash
-set -e
-
-if [ $# -eq 0 ]; then
-  echo "usage: $0 <pull-request-number>"
-  exit 1
-fi
-
-BASE="https://github.com/commaai/openpilot/pull/"
-PR_NUM="$(echo $1 | grep -o -E '[0-9]+')"
-BRANCH=tmp-pr${PR_NUM}
-
-git branch -D -f $BRANCH || true
-git fetch -u -f origin pull/$PR_NUM/head:$BRANCH
-git switch $BRANCH
-git reset --hard FETCH_HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6619de7162ff128eec0078fab1da2bbc1668b00d8b8298812bc1310d778eade
+size 349

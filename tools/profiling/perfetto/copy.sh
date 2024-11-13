@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-
-DEST=tici:/data/openpilot/selfdrive/debug/profiling/perfetto
-
-scp -r perfetto/out/linux/tracebox $DEST
-scp -r perfetto/test/configs $DEST
+version https://git-lfs.github.com/spec/v1
+oid sha256:0967531cbb9672641c683ffae3abca80edb97f5e1e3dbe4dfbde40d45b93c549
+size 159

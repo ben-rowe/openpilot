@@ -1,17 +1,3 @@
-moc_*
-*.moc
-
-translations/main_test_en.*
-
-_text
-_spinner
-
-ui
-mui
-watch3
-installer/installers/*
-qt/setup/setup
-qt/setup/reset
-qt/setup/wifi
-qt/setup/updater
-translations/alerts_generated.h
+version https://git-lfs.github.com/spec/v1
+oid sha256:b49d20e8db0b593ae2a6350bf98d0f44e6cad47c66589f61bec3911e1d17f89f
+size 188

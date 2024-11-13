@@ -1,24 +1,3 @@
-#!/usr/bin/env bash
-
-set -e
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-cd $DIR
-
-if [ ! -d palanteer ]; then
-  git clone https://github.com/dfeneyrou/palanteer
-  pip install wheel
-  sudo apt install libunwind-dev libdw-dev
-fi
-
-cd palanteer
-git pull
-
-mkdir -p build
-cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make -j$(nproc)
-
-pip install --force-reinstall python/dist/palanteer*.whl
-
-cp bin/palanteer $DIR/viewer
+version https://git-lfs.github.com/spec/v1
+oid sha256:361daff13a154ab78a1aa08e2a3d9774946d674368999d74efda732b2ec66a11
+size 438

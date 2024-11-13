@@ -1,21 +1,3 @@
-name: weekly CI test run
-on:
-  workflow_call:
-    inputs:
-      run_number:
-        required: true
-        type: string
-
-concurrency:
-  group: ci-run-${{ inputs.run_number }}-${{ github.ref }}
-  cancel-in-progress: true
-
-jobs:
-  selfdrive_tests:
-    uses: commaai/openpilot/.github/workflows/selfdrive_tests.yaml@master
-    with:
-      run_number: ${{ inputs.run_number }}
-  tools_tests:
-    uses: commaai/openpilot/.github/workflows/tools_tests.yaml@master
-    with:
-      run_number: ${{ inputs.run_number }}
+version https://git-lfs.github.com/spec/v1
+oid sha256:479621dcbecb808fda4783c756a1985f757b363a2c4ad3ec4a98e13f716c4505
+size 511

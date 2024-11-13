@@ -1,6 +1,3 @@
-SConscript(['pandad/SConscript'])
-SConscript(['controls/lib/lateral_mpc_lib/SConscript'])
-SConscript(['controls/lib/longitudinal_mpc_lib/SConscript'])
-SConscript(['locationd/SConscript'])
-SConscript(['modeld/SConscript'])
-SConscript(['ui/SConscript'])
+version https://git-lfs.github.com/spec/v1
+oid sha256:e285eb5aa75d333ec33172f336d2ce05a437a0fc19de0942ce64cd2b9d12a4fe
+size 251

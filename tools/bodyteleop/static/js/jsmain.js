@@ -1,27 +1,3 @@
-import { handleKeyX, executePlan } from "./controls.js";
-import { start, stop, lastChannelMessageTime, playSoundRequest } from "./webrtc.js";
-
-export var pc = null;
-export var dc = null;
-
-document.addEventListener('keydown', (e)=>(handleKeyX(e.key.toLowerCase(), 1)));
-document.addEventListener('keyup', (e)=>(handleKeyX(e.key.toLowerCase(), 0)));
-$(".keys").bind("mousedown touchstart", (e)=>handleKeyX($(e.target).attr('id').replace('key-', ''), 1));
-$(".keys").bind("mouseup touchend", (e)=>handleKeyX($(e.target).attr('id').replace('key-', ''), 0));
-$("#plan-button").click(executePlan);
-$(".sound").click((e)=>{
-  const sound = $(e.target).attr('id').replace('sound-', '')
-  return playSoundRequest(sound);
-});
-
-setInterval( () => {
-  const dt = new Date().getTime();
-  if ((dt - lastChannelMessageTime) > 1000) {
-    $(".pre-blob").removeClass('blob');
-    $("#battery").text("-");
-    $("#ping-time").text('-');
-    $("video")[0].load();
-  }
-}, 5000);
-
-start(pc, dc);
+version https://git-lfs.github.com/spec/v1
+oid sha256:a399cd6b5162f28952cc1f8bc1bd817930fa98c94c41dbc3f4d03e6a6d70fe82
+size 975

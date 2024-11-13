@@ -1,12 +1,3 @@
-#!/usr/bin/env bash
-
-while read hash submodule ref; do
-  git -C $submodule fetch --depth 5000 origin master
-  git -C $submodule branch -r --contains $hash | grep "origin/master"
-  if [ "$?" -eq 0 ]; then
-    echo "$submodule ok"
-  else
-    echo "$submodule: $hash is not on master"
-    exit 1
-  fi
-done <<< $(git submodule status --recursive)
+version https://git-lfs.github.com/spec/v1
+oid sha256:b35fdd6f4f07eadfb8d62993196b5748a1e523f7ca20340dec7a5c2eed2319c6
+size 343

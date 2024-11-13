@@ -1,18 +1,3 @@
-[submodule "panda"]
-  path = panda
-  url = ../../commaai/panda.git
-[submodule "opendbc"]
-  path = opendbc_repo
-  url = ../../commaai/opendbc.git
-[submodule "msgq"]
-  path = msgq_repo
-  url = ../../commaai/msgq.git
-[submodule "rednose_repo"]
-  path = rednose_repo
-  url = ../../commaai/rednose.git
-[submodule "teleoprtc_repo"]
-  path = teleoprtc_repo
-  url = ../../commaai/teleoprtc
-[submodule "tinygrad"]
-  path = tinygrad_repo
-  url = https://github.com/commaai/tinygrad.git
+version https://git-lfs.github.com/spec/v1
+oid sha256:82c3c5cec8db444520ba79ddefbba2e43441f9a5f8bd6cf3dbcd42a5a245370b
+size 476

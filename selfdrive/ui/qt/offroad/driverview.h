@@ -1,21 +1,3 @@
-#pragma once
-
-#include "selfdrive/ui/qt/widgets/cameraview.h"
-#include "selfdrive/ui/qt/onroad/driver_monitoring.h"
-#include "selfdrive/ui/qt/widgets/input.h"
-
-class DriverViewWindow : public CameraWidget {
-  Q_OBJECT
-public:
-  explicit DriverViewWindow(QWidget *parent);
-  void paintGL() override;
-  mat4 calcFrameMatrix() override;
-  DriverMonitorRenderer driver_monitor;
-};
-
-class DriverViewDialog : public DialogBase {
-  Q_OBJECT
-public:
-  DriverViewDialog(QWidget *parent);
-  void done(int r) override;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:cec6aa09cda8a4fb90a8ecfec1aa79c026ba038b22ddbf3568bb2608eb466fe3
+size 511

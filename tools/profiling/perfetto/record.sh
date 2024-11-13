@@ -1,8 +1,3 @@
-#!/usr/bin/env bash
-
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
-cd $DIR
-
-OUT=trace_
-sudo ./tracebox -o $OUT --txt -c configs/scheduling.cfg
-sudo chown $USER:$USER $OUT
+version https://git-lfs.github.com/spec/v1
+oid sha256:6927ed61baf4c9edc02fc925cec88dc6213ac379289dbfeb28b2828930f4cab0
+size 188

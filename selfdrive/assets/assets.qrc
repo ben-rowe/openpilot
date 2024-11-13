@@ -1,20 +1,3 @@
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-  <file alias="bootstrap-icons.svg">../../third_party/bootstrap/bootstrap-icons.svg</file>
-  <file>img_continue_triangle.svg</file>
-  <file>img_circled_check.svg</file>
-  <file>img_circled_slash.svg</file>
-  <file>img_eye_open.svg</file>
-  <file>img_eye_closed.svg</file>
-  <file>icons/close.svg</file>
-  <file>offroad/icon_lock_closed.svg</file>
-  <file>offroad/icon_checkmark.svg</file>
-  <file>offroad/icon_warning.png</file>
-  <file>offroad/icon_wifi_strength_low.svg</file>
-  <file>offroad/icon_wifi_strength_medium.svg</file>
-  <file>offroad/icon_wifi_strength_high.svg</file>
-  <file>offroad/icon_wifi_strength_full.svg</file>
-
-  <file alias="languages.json">../ui/translations/languages.json</file>
-</qresource>
-</RCC>
+version https://git-lfs.github.com/spec/v1
+oid sha256:2995c282a1dd3e7657cfadc0ba2ce3306fdcb4da102d075a93280f4f0c1ac798
+size 773

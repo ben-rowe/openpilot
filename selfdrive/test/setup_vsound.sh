@@ -1,10 +1,3 @@
-#!/usr/bin/env bash
-
-{
-  #start pulseaudio daemon
-  sudo pulseaudio -D
-
-  # create a virtual null audio and set it to default device
-  sudo pactl load-module module-null-sink sink_name=virtual_audio
-  sudo pactl set-default-sink virtual_audio
-} > /dev/null 2>&1
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d54d69151f594a272ce7600edc55a2cf0c7c8a529f9fc0a12f3797395ccc160
+size 262

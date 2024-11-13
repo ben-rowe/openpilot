@@ -1,6 +1,3 @@
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-  <file alias="bootstrap-icons.svg">../../../third_party/bootstrap/bootstrap-icons.svg</file>
-  <file>cabana-icon.png</file>
-</qresource>
-</RCC>
+version https://git-lfs.github.com/spec/v1
+oid sha256:cbc6edb1fdad3c10473cb645613a561b81b70e7250308975bcfb42567cb6290b
+size 191

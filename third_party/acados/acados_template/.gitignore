@@ -1,6 +1,3 @@
-__pycache__/
-
-# Cython intermediates
-*_pyx.c
-*_pyx.o
-*_pyx.so
+version https://git-lfs.github.com/spec/v1
+oid sha256:477f73573a50b1ae2740849e1aed4f8d353ead59116f95b897e8f620e8dbf31b
+size 62

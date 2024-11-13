@@ -1,7 +1,3 @@
-#!/usr/bin/env bash
-
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
-
-export FINGERPRINT="TOYOTA_COROLLA_TSS2"
-export SKIP_FW_QUERY="1"
-$DIR/../launch_openpilot.sh
+version https://git-lfs.github.com/spec/v1
+oid sha256:c5a81daa8b5df8560746ec6cc725745c9c0628d2f5ff478e500f61c1f178c0a6
+size 179

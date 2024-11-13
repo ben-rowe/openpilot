@@ -1,18 +1,3 @@
-#!/usr/bin/env bash
-
-set -e
-
-UI_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"/..
-TEST_TEXT="(WRAPPED_SOURCE_TEXT)"
-TEST_TS_FILE=$UI_DIR/translations/main_test_en.ts
-TEST_QM_FILE=$UI_DIR/translations/main_test_en.qm
-
-# translation strings
-UNFINISHED="<translation type=\"unfinished\"><\/translation>"
-TRANSLATED="<translation>$TEST_TEXT<\/translation>"
-
-mkdir -p $UI_DIR/translations
-rm -f $TEST_TS_FILE $TEST_QM_FILE
-lupdate -recursive "$UI_DIR" -ts $TEST_TS_FILE
-sed -i "s/$UNFINISHED/$TRANSLATED/" $TEST_TS_FILE
-lrelease $TEST_TS_FILE
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7b460e4f7629d9fa70994b6c370487a6d5dda92039c774544f48b8292bf5582
+size 558

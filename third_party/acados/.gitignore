@@ -1,5 +1,3 @@
-acados_repo/
-lib
-!x86_64/
-!larch64/
-!aarch64/
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ad813afbc4db29361e9f9326578ac89343d987bcc5d827dce895a4cee2b71dd
+size 46

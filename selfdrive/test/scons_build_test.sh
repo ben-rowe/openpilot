@@ -1,20 +1,3 @@
-#!/usr/bin/env bash
-set -e
-
-SCRIPT_DIR=$(dirname "$0")
-BASEDIR=$(realpath "$SCRIPT_DIR/../../")
-cd $BASEDIR
-
-# tests that our build system's dependencies are configured properly,
-# needs a machine with lots of cores
-
-# helpful commands:
-# scons -Q --tree=derived
-
-cd $BASEDIR/opendbc_repo/
-scons --clean
-scons --no-cache --random -j$(nproc)
-if ! scons -q; then
-  echo "FAILED: all build products not up to date after first pass."
-  exit 1
-fi
+version https://git-lfs.github.com/spec/v1
+oid sha256:54a3deee0a6d99bff983d84df79215d16ad136fbe3ba1e8185487a4de80802fe
+size 442

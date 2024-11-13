@@ -1,12 +1,3 @@
-#!/usr/bin/env bash
-
-SCRIPT_DIR=$(dirname "$0")
-BASEDIR=$(realpath "$SCRIPT_DIR/../../../")
-cd $BASEDIR
-
-export MAX_EXAMPLES=300
-export INTERNAL_SEG_CNT=300
-export FILEREADER_CACHE=1
-export INTERNAL_SEG_LIST=selfdrive/car/tests/test_models_segs.txt
-
-cd selfdrive/car/tests && pytest test_models.py test_car_interfaces.py
+version https://git-lfs.github.com/spec/v1
+oid sha256:77ec94341d729d7cbc74123ba9abeef70e0133e6f05c08134cf8836f5e42e847
+size 321

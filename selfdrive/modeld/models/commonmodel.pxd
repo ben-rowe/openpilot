@@ -1,19 +1,3 @@
-# distutils: language = c++
-
-from msgq.visionipc.visionipc cimport cl_device_id, cl_context, cl_mem
-
-cdef extern from "common/mat.h":
-  cdef struct mat3:
-    float v[9]
-
-cdef extern from "common/clutil.h":
-  cdef unsigned long CL_DEVICE_TYPE_DEFAULT
-  cl_device_id cl_get_device_id(unsigned long)
-  cl_context cl_create_context(cl_device_id)
-
-cdef extern from "selfdrive/modeld/models/commonmodel.h":
-  cppclass ModelFrame:
-    int buf_size
-    ModelFrame(cl_device_id, cl_context)
-    cl_mem * prepare(cl_mem, int, int, int, int, mat3)
-    unsigned char * buffer_from_cl(cl_mem*);
+version https://git-lfs.github.com/spec/v1
+oid sha256:15c393f005ecbc97bdbd659e7ddf9010ad819550451e77db56838f304cfc6ba8
+size 582

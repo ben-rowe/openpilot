@@ -1,14 +1,3 @@
-#!/usr/bin/env bash
-
-# export the block below when call manager.py
-export BLOCK="${BLOCK},camerad"
-export USE_WEBCAM="1"
-
-# Change camera index according to your setting
-export CAMERA_ROAD_ID="0"
-export CAMERA_DRIVER_ID="1"
-export DUAL_CAMERA="2" # camera index for wide road camera
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-
-$DIR/camerad.py
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3f0022900bacde332c5c9789a5ddcd5d2939424708c4b4d02300ff267c88091
+size 368

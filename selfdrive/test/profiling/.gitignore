@@ -1,2 +1,3 @@
-cachegrind.out.*
-*.prof
+version https://git-lfs.github.com/spec/v1
+oid sha256:40f814106afc082804430763cbf01e40aa05003e7501a1bb6f5cd0c4744f9d01
+size 24

@@ -1,33 +1,3 @@
-#include <QApplication>
-#include <QtWidgets>
-
-#include "selfdrive/ui/qt/qt_window.h"
-#include "selfdrive/ui/qt/util.h"
-#include "selfdrive/ui/qt/widgets/cameraview.h"
-
-int main(int argc, char *argv[]) {
-  initApp(argc, argv);
-
-  QApplication a(argc, argv);
-  QWidget w;
-  setMainWindow(&w);
-
-  QVBoxLayout *layout = new QVBoxLayout(&w);
-  layout->setMargin(0);
-  layout->setSpacing(0);
-
-  {
-    QHBoxLayout *hlayout = new QHBoxLayout();
-    layout->addLayout(hlayout);
-    hlayout->addWidget(new CameraWidget("camerad", VISION_STREAM_ROAD));
-  }
-
-  {
-    QHBoxLayout *hlayout = new QHBoxLayout();
-    layout->addLayout(hlayout);
-    hlayout->addWidget(new CameraWidget("camerad", VISION_STREAM_DRIVER));
-    hlayout->addWidget(new CameraWidget("camerad", VISION_STREAM_WIDE_ROAD));
-  }
-
-  return a.exec();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2e966e3e01e69d7539575aaca1e9113c1b2179b0bc47bdbf628381fe4b7928ef
+size 808

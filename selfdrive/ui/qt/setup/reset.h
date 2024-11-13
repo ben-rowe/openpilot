@@ -1,26 +1,3 @@
-#include <QLabel>
-#include <QPushButton>
-#include <QWidget>
-
-enum ResetMode {
-  USER_RESET, // user initiated a factory reset from openpilot
-  RECOVER,    // userdata is corrupt for some reason, give a chance to recover
-};
-
-class Reset : public QWidget {
-  Q_OBJECT
-
-public:
-  explicit Reset(ResetMode mode, QWidget *parent = 0);
-
-private:
-  QLabel *body;
-  QPushButton *rejectBtn;
-  QPushButton *rebootBtn;
-  QPushButton *confirmBtn;
-  void doErase();
-  void startReset();
-
-private slots:
-  void confirm();
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:c81ddf0c01310c25c773122dbb931fc9d3405174dfc8eed42ad3607a13d6a03d
+size 511

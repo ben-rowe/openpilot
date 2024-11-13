@@ -1,24 +1,3 @@
-#pragma once
-
-#include "cereal/messaging/messaging.h"
-
-class Sensor {
-public:
-  int gpio_fd = -1;
-  bool enabled = false;
-  uint64_t start_ts = 0;
-  uint64_t init_delay = 500e6; // default dealy 500ms
-
-  virtual ~Sensor() {}
-  virtual int init() = 0;
-  virtual bool get_event(MessageBuilder &msg, uint64_t ts = 0) = 0;
-  virtual bool has_interrupt_enabled() = 0;
-  virtual int shutdown() = 0;
-
-  virtual bool is_data_valid(uint64_t current_ts) {
-    if (start_ts == 0) {
-      start_ts = current_ts;
-    }
-    return (current_ts - start_ts) > init_delay;
-  }
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:99887f4bca5eb6f64a7ca26f8dc1754ae89ca992efd1de57c34a9f9012f7ec27
+size 562

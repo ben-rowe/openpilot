@@ -1,5 +1,3 @@
-moc_*
-*.moc
-
-replay
-tests/test_replay
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc28c9ea4a0a3151775c678e32bf7bac7ce49c6e95a43d2cde8ec4229ab680dd
+size 38

@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-import sys
-import tensorflow as tf
-
-with open(sys.argv[1], "rb") as f:
-  graph_def = tf.compat.v1.GraphDef()
-  graph_def.ParseFromString(f.read())
-  #tf.io.write_graph(graph_def, '', sys.argv[1]+".try")
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a7e434d3a71c01d53abcd3ad2c4f87f99555a0bf10abe00903e8b683c32b946
+size 226

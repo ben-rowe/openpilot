@@ -1,11 +1,3 @@
-#!/usr/bin/env bash
-set -e
-
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
-cd $DIR
-
-if [ ! -z "$(git status --porcelain)" ]; then
-  echo "Dirty working tree after build:"
-  git status --porcelain
-  exit 1
-fi
+version https://git-lfs.github.com/spec/v1
+oid sha256:644aa100a47395c540669c66fc3633c90ef1b60e98981cede6e1e4d7509a2dd9
+size 224

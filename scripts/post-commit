@@ -1,7 +1,3 @@
-#!/usr/bin/env bash
-set -e
-if [[ -f .git/hooks/post-commit.d/post-commit ]]; then
-  .git/hooks/post-commit.d/post-commit
-fi
-tools/op.sh lint --fast
-echo ""
+version https://git-lfs.github.com/spec/v1
+oid sha256:932d740a03bd45e49c50d19a331b622b234b37eb97f30f8d0300fe3c9829b159
+size 156

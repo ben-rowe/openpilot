@@ -1,17 +1,3 @@
-#pragma once
-#include <eigen3/Eigen/Dense>
-#include "common/transformations/coordinates.hpp"
-
-
-Eigen::Quaterniond ensure_unique(const Eigen::Quaterniond &quat);
-
-Eigen::Quaterniond euler2quat(const Eigen::Vector3d &euler);
-Eigen::Vector3d quat2euler(const Eigen::Quaterniond &quat);
-Eigen::Matrix3d quat2rot(const Eigen::Quaterniond &quat);
-Eigen::Quaterniond rot2quat(const Eigen::Matrix3d &rot);
-Eigen::Matrix3d euler2rot(const Eigen::Vector3d &euler);
-Eigen::Vector3d rot2euler(const Eigen::Matrix3d &rot);
-Eigen::Matrix3d rot_matrix(double roll, double pitch, double yaw);
-Eigen::Matrix3d rot(const Eigen::Vector3d &axis, double angle);
-Eigen::Vector3d ecef_euler_from_ned(const ECEF &ecef_init, const Eigen::Vector3d &ned_pose);
-Eigen::Vector3d ned_euler_from_ecef(const ECEF &ecef_init, const Eigen::Vector3d &ecef_pose);
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c9f07c6a8e13761d49b362621b4ad9d98491c2c5bd4d1f1e07fc075b0b870c4
+size 828

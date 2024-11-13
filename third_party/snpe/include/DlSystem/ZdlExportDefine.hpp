@@ -1,13 +1,3 @@
-//=============================================================================
-//
-//  Copyright (c) 2015, 2020 Qualcomm Technologies, Inc.
-//  All Rights Reserved.
-//  Confidential and Proprietary - Qualcomm Technologies, Inc.
-//
-//=============================================================================
-
-#pragma once
-
-#ifndef ZDL_EXPORT
-#define ZDL_EXPORT
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:07c079eb9825f264f83bc55bd2d78e8733c4613f83f03eb0c0b0df0c1a27efa4
+size 371

@@ -1,23 +1,3 @@
-#!/usr/bin/env python3
-
-import requests
-from openpilot.common.params import Params
-import sys
-
-
-if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    print(f"{sys.argv[0]} <github username>")
-    exit(1)
-
-  username = sys.argv[1]
-  keys = requests.get(f"https://github.com/{username}.keys", timeout=10)
-
-  if keys.status_code == 200:
-    params = Params()
-    params.put_bool("SshEnabled", True)
-    params.put("GithubSshKeys", keys.text)
-    params.put("GithubUsername", username)
-    print("Setup ssh keys successfully")
-  else:
-    print("Error getting public keys from github")
+version https://git-lfs.github.com/spec/v1
+oid sha256:d90035b03d985d90f215ace4838cfbbbdd52b1d8b09a95de9d510e13a2cf6e2b
+size 583

@@ -1,13 +1,3 @@
-#pragma once
-
-#include "system/sensord/sensors/bmx055_accel.h"
-#include "system/sensord/sensors/i2c_sensor.h"
-
-class BMX055_Temp : public I2CSensor {
-  uint8_t get_device_address() {return BMX055_ACCEL_I2C_ADDR;}
-public:
-  BMX055_Temp(I2CBus *bus);
-  int init();
-  bool get_event(MessageBuilder &msg, uint64_t ts = 0);
-  int shutdown() { return 0; }
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:624e0e22bb655047190cadd8fc96475b3254d665e68fe6c59ad87ddcacad64ed
+size 353

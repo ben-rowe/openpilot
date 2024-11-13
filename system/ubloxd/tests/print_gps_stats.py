@@ -1,20 +1,3 @@
-#!/usr/bin/env python3
-import time
-import cereal.messaging as messaging
-
-if __name__ == "__main__":
-  sm = messaging.SubMaster(['ubloxGnss', 'gpsLocationExternal'])
-
-  while 1:
-    ug = sm['ubloxGnss']
-    gle = sm['gpsLocationExternal']
-
-    try:
-      cnos = []
-      for m in ug.measurementReport.measurements:
-        cnos.append(m.cno)
-      print("Sats: %d   Accuracy: %.2f m   cnos" % (ug.measurementReport.numMeas, gle.horizontalAccuracy), sorted(cnos))
-    except Exception:
-      pass
-    sm.update()
-    time.sleep(0.1)
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c407e6921055fd58f70c9d920dd46a08f680ad95fb711428a41359dd9521dba
+size 531

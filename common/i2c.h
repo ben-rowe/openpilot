@@ -1,19 +1,3 @@
-#pragma once
-
-#include <cstdint>
-#include <mutex>
-
-#include <sys/types.h>
-
-class I2CBus {
-  private:
-    int i2c_fd;
-    std::mutex m;
-
-  public:
-    I2CBus(uint8_t bus_id);
-    ~I2CBus();
-
-    int read_register(uint8_t device_address, uint register_address, uint8_t *buffer, uint8_t len);
-    int set_register(uint8_t device_address, uint register_address, uint8_t data);
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:8482a5c8ecd50872fd239aed1bf966682db029dba05d3eb8ae0ec52eba98b4f6
+size 376

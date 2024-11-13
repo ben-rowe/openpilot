@@ -1,27 +1,3 @@
-#!/usr/bin/env python3
-
-import cereal.messaging as messaging
-from cereal.services import SERVICE_LIST
-
-TO_CHECK = ['carState']
-
-
-if __name__ == "__main__":
-  sm = messaging.SubMaster(TO_CHECK)
-
-  prev_t: dict[str, float] = {}
-
-  while True:
-    sm.update()
-
-    for s in TO_CHECK:
-      if sm.updated[s]:
-        t = sm.logMonoTime[s] / 1e9
-
-        if s in prev_t:
-          expected = 1.0 / (SERVICE_LIST[s].frequency)
-          dt = t - prev_t[s]
-          if dt > 10 * expected:
-            print(t, s, dt)
-
-        prev_t[s] = t
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b35459555c3c01c0dbec5abd7af61ef2f0996c2678920d692b33ec4db1677f9
+size 534

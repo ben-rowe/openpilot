@@ -1,29 +1,3 @@
-#pragma once
-
-#include <QLabel>
-#include <QProcess>
-#include <QPushButton>
-#include <QProgressBar>
-#include <QStackedWidget>
-#include <QWidget>
-
-class Updater : public QStackedWidget {
-  Q_OBJECT
-
-public:
-  explicit Updater(const QString &updater_path, const QString &manifest_path, QWidget *parent = 0);
-
-private slots:
-  void installUpdate();
-  void readProgress();
-  void updateFinished(int exitCode, QProcess::ExitStatus exitStatus);
-
-private:
-  QProcess proc;
-  QString updater, manifest;
-
-  QLabel *text;
-  QProgressBar *bar;
-  QPushButton *reboot;
-  QWidget *prompt, *wifi, *progress;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:eaee6b4b262da7cdd707c7fc24b28603e0f776a3d5ee3be985ffa59aac1d4ca0
+size 595

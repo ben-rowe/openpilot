@@ -1,18 +1,3 @@
-from openpilot.common.params_pyx import Params, ParamKeyType, UnknownKeyName
-assert Params
-assert ParamKeyType
-assert UnknownKeyName
-
-if __name__ == "__main__":
-  import sys
-
-  params = Params()
-  key = sys.argv[1]
-  assert params.check_key(key), f"unknown param: {key}"
-
-  if len(sys.argv) == 3:
-    val = sys.argv[2]
-    print(f"SET: {key} = {val}")
-    params.put(key, val)
-  elif len(sys.argv) == 2:
-    print(f"GET: {key} = {params.get(key)}")
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e538d25c093c651f61a2c632f1b9618f2039f4d88fbdfb5487c04360502b5e6
+size 449

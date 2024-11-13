@@ -1,10 +1,3 @@
-:: pull base image
-IF NOT DEFINED USE_LOCAL_IMAGE ^
-echo "Updating openpilot_base image if needed..." && ^
-docker pull ghcr.io/commaai/openpilot-base:latest
-
-:: setup .host dir
-mkdir .devcontainer\.host
-
-:: setup host env file
-echo "" > .devcontainer\.host\.env
+version https://git-lfs.github.com/spec/v1
+oid sha256:18b0084b51040761a1b1eba7a35746bd9af489af4474ad234413cf34a210894c
+size 261

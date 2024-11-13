@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
-
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
-exec "$DIR/dmonitoringmodeld.py" "$@"
+version https://git-lfs.github.com/spec/v1
+oid sha256:3656d3841a70e2f671509a7aabdc3ffef8a67cbb9155a19d3a283989b471b39b
+size 122

@@ -1,28 +1,3 @@
-#pragma once
-
-#include <QLabel>
-#include <QProcess>
-#include <QProgressBar>
-#include <QWidget>
-
-class Installer : public QWidget {
-  Q_OBJECT
-
-public:
-  explicit Installer(QWidget *parent = 0);
-
-private slots:
-  void updateProgress(int percent);
-
-  void readProgress();
-  void cloneFinished(int exitCode, QProcess::ExitStatus exitStatus);
-
-private:
-  QLabel *val;
-  QProgressBar *bar;
-  QProcess proc;
-
-  void doInstall();
-  void freshClone();
-  void cachedFetch(const QString &cache);
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:352e40d702935d3c731db0a61092f156eee681200bcaa51f9cc11349735f5f56
+size 489

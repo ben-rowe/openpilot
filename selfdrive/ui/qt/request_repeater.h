@@ -1,15 +1,3 @@
-#pragma once
-
-#include "common/util.h"
-#include "selfdrive/ui/qt/api.h"
-#include "selfdrive/ui/ui.h"
-
-class RequestRepeater : public HttpRequest {
-public:
-  RequestRepeater(QObject *parent, const QString &requestURL, const QString &cacheKey = "", int period = 0, bool while_onroad=false);
-
-private:
-  Params params;
-  QTimer *timer;
-  QString prevResp;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:901bb746eb9a4ec1b117a1e79b2727683ce959d60dd125e2b98903392fb68939
+size 356

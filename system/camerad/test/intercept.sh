@@ -1,2 +1,3 @@
-#!/usr/bin/env bash
-DISABLE_ROAD=1 DISABLE_WIDE_ROAD=1 DEBUG_FRAMES=1 LOGPRINT=debug LD_PRELOAD=/data/tici_test_scripts/isp/interceptor/tmpioctl.so ./camerad
+version https://git-lfs.github.com/spec/v1
+oid sha256:e836a9c078f7f1cb233e0da0f190a7295f9687caa02d827672fbbdba3f20fe4e
+size 158

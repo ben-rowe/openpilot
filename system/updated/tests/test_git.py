@@ -1,22 +1,3 @@
-import contextlib
-from openpilot.system.updated.tests.test_base import ParamsBaseUpdateTest, run, update_release
-
-
-class TestUpdateDGitStrategy(ParamsBaseUpdateTest):
-  def update_remote_release(self, release):
-    update_release(self.remote_dir, release, *self.MOCK_RELEASES[release])
-    run(["git", "add", "."], cwd=self.remote_dir)
-    run(["git", "commit", "-m", f"openpilot release {release}"], cwd=self.remote_dir)
-
-  def setup_remote_release(self, release):
-    run(["git", "init"], cwd=self.remote_dir)
-    run(["git", "checkout", "-b", release], cwd=self.remote_dir)
-    self.update_remote_release(release)
-
-  def setup_basedir_release(self, release):
-    super().setup_basedir_release(release)
-    run(["git", "clone", "-b", release, self.remote_dir, self.basedir])
-
-  @contextlib.contextmanager
-  def additional_context(self):
-    yield
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5c60be6e7110f9b28e1151274cd13224eb8e20953e3925d894a2da87beb1f95
+size 849

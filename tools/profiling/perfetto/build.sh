@@ -1,11 +1,3 @@
-#!/usr/bin/env bash
-
-if [ ! -d perfetto ]; then
-  git clone https://android.googlesource.com/platform/external/perfetto/
-fi
-
-cd perfetto
-
-tools/install-build-deps --linux-arm
-tools/gn gen --args='is_debug=false target_os="linux" target_cpu="arm64"' out/linux
-tools/ninja -C out/linux tracebox traced traced_probes perfetto
+version https://git-lfs.github.com/spec/v1
+oid sha256:52dda95720b9b1849d8251358fdd3e3de8ce6db761c7a94051e96752f43a18d0
+size 323

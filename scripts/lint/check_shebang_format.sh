@@ -1,15 +1,3 @@
-#!/usr/bin/env bash
-
-FAIL=0
-
-if grep '^#!.*python' $@ | grep -v '#!/usr/bin/env python3$'; then
-  echo -e "Invalid shebang! Must use '#!/usr/bin/env python3'\n"
-  FAIL=1
-fi
-
-if grep '^#!.*bash' $@ | grep -v '#!/usr/bin/env bash$'; then
-  echo -e "Invalid shebang! Must use '#!/usr/bin/env bash'"
-  FAIL=1
-fi
-
-exit $FAIL
+version https://git-lfs.github.com/spec/v1
+oid sha256:07f74142367f35cd21ef07dfd1ddc030548c934d20892456879cf11a78e6532e
+size 320

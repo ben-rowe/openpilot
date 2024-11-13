@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-import argparse
-import pickle
-
-from opendbc.car.docs import get_all_car_docs
-
-
-def dump_car_docs(path):
-  with open(path, 'wb') as f:
-    pickle.dump(get_all_car_docs(), f)
-  print(f'Dumping car info to {path}')
-
-
-if __name__ == "__main__":
-  parser = argparse.ArgumentParser()
-  parser.add_argument("--path", required=True)
-  args = parser.parse_args()
-  dump_car_docs(args.path)
+version https://git-lfs.github.com/spec/v1
+oid sha256:78247118e09f05b4199622e6bee10769b27a14579bb04a72982c4d6f98755473
+size 404

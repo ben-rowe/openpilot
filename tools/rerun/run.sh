@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-
-# TODO: remove this file once Rerun has interface to set log message level
-set -e
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-
-RUST_LOG=warn $DIR/run.py $@
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:86544618adc639d79a1f3460407134a08452f15bf65289cd72b8820c76f01094
+size 202

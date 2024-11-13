@@ -1,9 +1,3 @@
-# remove all keys that end in DEPRECATED
-def strip_deprecated_keys(d):
-  for k in list(d.keys()):
-    if isinstance(k, str):
-      if k.endswith('DEPRECATED'):
-        d.pop(k)
-      elif isinstance(d[k], dict):
-        strip_deprecated_keys(d[k])
-  return d
+version https://git-lfs.github.com/spec/v1
+oid sha256:b43c79e8ae371696836346a0916a22c41bde62fe77601b3dcdba7b8173ac0e7c
+size 259

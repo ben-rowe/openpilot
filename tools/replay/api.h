@@ -1,15 +1,3 @@
-#pragma once
-
-#include <curl/curl.h>
-#include <string>
-
-#include "common/util.h"
-#include "third_party/json11/json11.hpp"
-
-namespace CommaApi2 {
-
-const std::string BASE_URL = util::getenv("API_HOST", "https://api.commadotai.com").c_str();
-std::string create_token(bool use_jwt, const json11::Json& payloads = {}, int expiry = 3600);
-std::string httpGet(const std::string &url, long *response_code = nullptr);
-
-}  // namespace CommaApi2
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f5a6a70e8f872eb4b98ced5c9da475110d378bda7267cdc3b4b766bc4651871
+size 436

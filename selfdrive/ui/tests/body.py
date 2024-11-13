@@ -1,22 +1,3 @@
-#!/usr/bin/env python3
-import time
-import cereal.messaging as messaging
-
-if __name__ == "__main__":
-  while True:
-    pm = messaging.PubMaster(['carParams', 'carState'])
-    batt = 1.
-    while True:
-      msg = messaging.new_message('carParams')
-      msg.carParams.carName = "BODY"
-      msg.carParams.notCar = True
-      pm.send('carParams', msg)
-
-      for b in range(100, 0, -1):
-        msg = messaging.new_message('carState')
-        msg.carState.charging = True
-        msg.carState.fuelGauge = b / 100.
-        pm.send('carState', msg)
-        time.sleep(0.1)
-
-      time.sleep(1)
+version https://git-lfs.github.com/spec/v1
+oid sha256:154dec86c88d02e36e1e095f98648e5c0b8477912e2497576ac914a9c8428c9b
+size 590

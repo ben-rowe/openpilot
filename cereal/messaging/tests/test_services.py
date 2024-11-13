@@ -1,21 +1,3 @@
-import os
-import tempfile
-from typing import Dict
-from parameterized import parameterized
-
-import cereal.services as services
-from cereal.services import SERVICE_LIST
-
-
-class TestServices:
-
-  @parameterized.expand(SERVICE_LIST.keys())
-  def test_services(self, s):
-    service = SERVICE_LIST[s]
-    assert service.frequency <= 104
-    assert service.decimation != 0
-
-  def test_generated_header(self):
-    with tempfile.NamedTemporaryFile(suffix=".h") as f:
-      ret = os.system(f"python3 {services.__file__} > {f.name} && clang++ {f.name}")
-      assert ret == 0, "generated services header is not valid C"
+version https://git-lfs.github.com/spec/v1
+oid sha256:1267d77d8f12e90fd14ee56e3dbb009cc4e02d3d255a62c3c6e0dc0ecff33064
+size 609

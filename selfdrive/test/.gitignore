@@ -1,9 +1,3 @@
-out/
-docker_out/
-
-process_replay/diff.txt
-process_replay/model_diff.txt
-valgrind_logs.txt
-
-*.bz2
-*.hevc
+version https://git-lfs.github.com/spec/v1
+oid sha256:79773b6fa003c28d64f3d643ccac20d8436ddf88f03f25d9ffdf0625dc726e31
+size 104

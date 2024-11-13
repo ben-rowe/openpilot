@@ -1,5 +1,3 @@
-Import('env', 'envCython')
-
-transformations = env.Library('transformations', ['orientation.cc', 'coordinates.cc'])
-transformations_python = envCython.Program('transformations.so', 'transformations.pyx')
-Export('transformations', 'transformations_python')
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b87ab1c49df69be3ca5285cdd59eca697cc4eda46789df09f00219ec4bfbf7e
+size 255

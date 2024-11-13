@@ -1,25 +1,3 @@
-#pragma once
-
-#include <string>
-
-extern "C" {
-#include <libavformat/avformat.h>
-#include <libavcodec/avcodec.h>
-}
-
-#include "cereal/messaging/messaging.h"
-
-class VideoWriter {
-public:
-  VideoWriter(const char *path, const char *filename, bool remuxing, int width, int height, int fps, cereal::EncodeIndex::Type codec);
-  void write(uint8_t *data, int len, long long timestamp, bool codecconfig, bool keyframe);
-  ~VideoWriter();
-private:
-  std::string vid_path, lock_path;
-  FILE *of = nullptr;
-
-  AVCodecContext *codec_ctx;
-  AVFormatContext *ofmt_ctx;
-  AVStream *out_stream;
-  bool remuxing;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd1522bc9c1056925d8e87b1780c675ed284ad3850bc6dd6108ee018b529d93e
+size 598

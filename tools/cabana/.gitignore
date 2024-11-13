@@ -1,6 +1,3 @@
-moc_*
-*.moc
-
-cabana
-dbc/car_fingerprint_to_dbc.json
-tests/test_cabana
+version https://git-lfs.github.com/spec/v1
+oid sha256:024a43cdde93a44156fee9305af1ba5de74543efce8dc2414005dbb48e1f4f37
+size 70

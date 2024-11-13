@@ -1,31 +1,3 @@
-#pragma once
-
-#include <QLabel>
-#include <QPushButton>
-
-#include "common/params.h"
-
-class ExperimentalModeButton : public QPushButton {
-  Q_OBJECT
-
-public:
-  explicit ExperimentalModeButton(QWidget* parent = 0);
-
-signals:
-  void openSettings(int index = 0, const QString &toggle = "");
-
-private:
-  void showEvent(QShowEvent *event) override;
-
-  Params params;
-  bool experimental_mode;
-  int img_width = 100;
-  int horizontal_padding = 30;
-  QPixmap experimental_pixmap;
-  QPixmap chill_pixmap;
-  QLabel *mode_label;
-  QLabel *mode_icon;
-
-protected:
-  void paintEvent(QPaintEvent *event) override;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:0be1c519232648c94c3d8badd267d88253244f37ab91006889426eb40a60a15d
+size 601

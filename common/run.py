@@ -1,13 +1,3 @@
-import subprocess
-
-
-def run_cmd(cmd: list[str], cwd=None, env=None) -> str:
-  return subprocess.check_output(cmd, encoding='utf8', cwd=cwd, env=env).strip()
-
-
-def run_cmd_default(cmd: list[str], default: str = "", cwd=None, env=None) -> str:
-  try:
-    return run_cmd(cmd, cwd=cwd, env=env)
-  except subprocess.CalledProcessError:
-    return default
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:6e120e7aa560c21941dc45fafe72462dbb6bec8f5ad79bb85134f2d59aeb28a6
+size 351

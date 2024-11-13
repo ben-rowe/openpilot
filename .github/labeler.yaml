@@ -1,27 +1,3 @@
-CI / testing:
-  - changed-files:
-    - any-glob-to-all-files: "{.github/**,**/test_*,Jenkinsfile}"
-
-car:
-  - changed-files:
-    - any-glob-to-all-files: '{selfdrive/car/**,opendbc_repo}'
-
-simulation:
-  - changed-files:
-    - any-glob-to-all-files: 'tools/sim/**'
-
-ui:
-  - changed-files:
-    - any-glob-to-all-files: 'selfdrive/ui/**'
-
-tools:
-  - changed-files:
-    - any-glob-to-all-files: 'tools/**'
-
-multilanguage:
-  - changed-files:
-    - any-glob-to-all-files: 'selfdrive/ui/translations/**'
-
-autonomy:
-  - changed-files:
-    - any-glob-to-all-files: "{selfdrive/modeld/models/**,selfdrive/test/process_replay/model_replay_ref_commit}"
+version https://git-lfs.github.com/spec/v1
+oid sha256:b11d13129a613005acbc696bb8048f4e0bf7bbf02bf3c52eb623ca7f56d721ae
+size 640

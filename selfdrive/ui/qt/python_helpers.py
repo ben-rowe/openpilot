@@ -1,20 +1,3 @@
-import os
-from cffi import FFI
-
-import sip
-
-from openpilot.common.ffi_wrapper import suffix
-from openpilot.common.basedir import BASEDIR
-
-
-def get_ffi():
-  lib = os.path.join(BASEDIR, "selfdrive", "ui", "qt", "libpython_helpers" + suffix())
-
-  ffi = FFI()
-  ffi.cdef("void set_main_window(void *w);")
-  return ffi, ffi.dlopen(lib)
-
-
-def set_main_window(widget):
-  ffi, lib = get_ffi()
-  lib.set_main_window(ffi.cast('void*', sip.unwrapinstance(widget)))
+version https://git-lfs.github.com/spec/v1
+oid sha256:42c038a1aab86f1281c63cf3cf7941fa73f96c6e74851cae22289c2b40b95145
+size 454

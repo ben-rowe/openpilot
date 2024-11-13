@@ -1,20 +1,3 @@
-#ifndef KAITAI_STRUCT_H
-#define KAITAI_STRUCT_H
-
-#include <kaitai/kaitaistream.h>
-
-namespace kaitai {
-
-class kstruct {
-public:
-    kstruct(kstream *_io) { m__io = _io; }
-    virtual ~kstruct() {}
-protected:
-    kstream *m__io;
-public:
-    kstream *_io() { return m__io; }
-};
-
-}
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9f412d10c04f9cb1e99173d3a62460a1cb3ac26fcd46dee51b860d225b18c40
+size 286
